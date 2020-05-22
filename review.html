@@ -1,0 +1,206 @@
+<!docktipe html>
+<html>
+
+    <head>
+    <meta charset = "uft-8">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="review_style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>beHealthy</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     
+    </head>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v7.0"></script>
+    <body>
+    
+    <script>
+        $(window).on("load",function(){
+            $(".loader-container").fadeOut(1000);
+        });
+    </script>
+            
+        
+    <svg style="display: none;">
+        <symbol id="buy" viewBox="0 -133 512 512">
+            <g>
+                
+		<path d="m161.074219 145.507812c0-6.777343-5.433594-12.316406-12.183594-12.507812-.285156.007812-.570313.011719-.855469.011719l-22.625-.09375v25.101562h23.117188c6.917968 0 12.546875-5.613281 12.546875-12.511719zm0 0"/><path d="m148.386719 102.996094c2.484375-.265625 5.582031-3.902344 5.582031-7.753906 0-3.644532-2.992188-7.355469-5.929688-7.355469h-22.625v15.03125l22.433594.09375c.179688-.007813.359375-.015625.539063-.015625zm0 0"/><path d="m397 0h-282c-63.410156 0-115 51.589844-115 115v15.90625c0 63.410156 51.589844 115 115 115h282c63.410156 0 115-51.589844 115-115v-15.90625c0-63.410156-51.589844-115-115-115zm17.265625 80.039062-28.34375 44.820313v49.023437c0 8.285157-6.714844 15-15 15s-15-6.714843-15-15v-49.578124l-27.988281-44.265626c-4.429688-7-2.34375-16.265624 4.660156-20.695312 7.003906-4.425781 16.265625-2.339844 20.695312 4.664062l17.808594 28.164063 17.8125-28.164063c4.429688-7.003906 13.695313-9.089843 20.695313-4.664062 7 4.429688 9.085937 13.695312 4.660156 20.695312zm-153.585937 78.414063c8.382812 0 15.46875-9.117187 15.46875-19.910156v-66.089844c0-8.285156 6.714843-15 15-15 8.28125 0 15 6.714844 15 15v66.085937c0 27.523438-20.398438 49.914063-45.46875 49.914063-25.070313 0-45.464844-22.390625-45.464844-49.914063v-66.085937c0-8.285156 6.714844-15 15-15 8.28125 0 15 6.714844 15 15v66.085937c0 10.796876 7.082031 19.914063 15.464844 19.914063zm-165.265626-40.566406c0-.019531 0-.039063 0-.0625v-44.9375c0-8.285157 6.714844-15 15-15h37.625c19.476563 0 35.929688 17.105469 35.929688 37.355469 0 7.269531-2.074219 14.136718-5.621094 19.972656 7.851563 7.714844 12.726563 18.445312 12.726563 30.292968 0 23.441407-19.085938 42.511719-42.546875 42.511719h-38.113282c-8.285156 0-15-6.714843-15-15zm0 0"/>
+	
+            </g>
+        </symbol>
+        
+        <symbol id="facebook" viewBox="0 0 512 512">
+            <g>
+                <path d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z"/>
+            </g>
+        </symbol>
+        
+        <symbol id="instagram" viewBox="0 0 24 24" >
+            <g>
+                <path d="m12.004 5.838c-3.403 0-6.158 2.758-6.158 6.158 0 3.403 2.758 6.158 6.158 6.158 3.403 0 6.158-2.758 6.158-6.158 0-3.403-2.758-6.158-6.158-6.158zm0 10.155c-2.209 0-3.997-1.789-3.997-3.997s1.789-3.997 3.997-3.997 3.997 1.789 3.997 3.997c.001 2.208-1.788 3.997-3.997 3.997z"/><path d="m16.948.076c-2.208-.103-7.677-.098-9.887 0-1.942.091-3.655.56-5.036 1.941-2.308 2.308-2.013 5.418-2.013 9.979 0 4.668-.26 7.706 2.013 9.979 2.317 2.316 5.472 2.013 9.979 2.013 4.624 0 6.22.003 7.855-.63 2.223-.863 3.901-2.85 4.065-6.419.104-2.209.098-7.677 0-9.887-.198-4.213-2.459-6.768-6.976-6.976zm3.495 20.372c-1.513 1.513-3.612 1.378-8.468 1.378-5 0-7.005.074-8.468-1.393-1.685-1.677-1.38-4.37-1.38-8.453 0-5.525-.567-9.504 4.978-9.788 1.274-.045 1.649-.06 4.856-.06l.045.03c5.329 0 9.51-.558 9.761 4.986.057 1.265.07 1.645.07 4.847-.001 4.942.093 6.959-1.394 8.453z"/><circle cx="18.406" cy="5.595" r="1.439"/>
+            </g>
+        </symbol>
+        
+        <symbol id="youtube" viewBox="0 0 24 24">
+            <g>
+                <path d="m9.939 7.856c-.497-.297-1.134.062-1.134.644v7c0 .585.638.939 1.134.645l5.869-3.495c.488-.291.487-.997.001-1.289zm.366 6.325v-4.36l3.655 2.183z"/><path d="m19.904 3.271c-4.653-.691-11.153-.691-15.808 0-1.862.276-3.329 1.738-3.649 3.636-.596 3.523-.596 6.664 0 10.186.32 1.899 1.787 3.36 3.649 3.636 2.332.346 5.124.519 7.915.519 2.786 0 5.571-.172 7.894-.518 1.86-.276 3.326-1.737 3.648-3.636.596-3.523.596-6.665 0-10.188-.32-1.897-1.787-3.359-3.649-3.635zm2.17 13.573c-.213 1.256-1.173 2.222-2.39 2.402-4.518.671-10.838.671-15.368-.001-1.218-.181-2.179-1.146-2.391-2.402-.574-3.394-.574-6.291 0-9.687.213-1.256 1.173-2.22 2.392-2.402 2.262-.335 4.973-.503 7.682-.503 2.711 0 5.422.168 7.684.503 1.218.181 2.179 1.146 2.391 2.402.574 3.396.574 6.293 0 9.688z"/>
+            </g>
+        </symbol>
+        
+    </svg>
+        
+    
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+        
+    <header class="header">
+        <div class = "container">
+            <div class="header_inner">
+                <div class="header_logo">
+                    <a href="index.html">
+                    <img src="img/logo1.png" alt=""  width="170" height="60">
+                    </a>
+                </div>
+                
+                
+                <nav class="menu">
+                    <a class="menu__link" href="recovery.html">Order a rehabilitation course</a>
+                    <a class="menu__link" href="medDevices.html">Medical devices</a>
+                    <a class="menu__link" href="seeMore.html">See more</a>
+                    <a class="menu__link" href="review.html">Leave a review</a>
+                </nav>
+            </div>
+        </div>    
+    </header>
+    
+    <div class="intro">
+        <div class="container">
+            <div class="intro_inner">
+                <!--<h1 class="intro_title">your health is our everything</h1>-->
+            </div>
+        </div>
+    </div>
+     
+        
+     
+    <div class="pusto"></div> 
+        
+        
+    <div class="comments">   
+    <div class="fb-comments" data-href="https://maksholland.github.io/BeHealthy.github.io/review.html" data-numposts="5" data-width=""></div>
+     </div>   
+        
+        
+        
+        
+<!--    <div id="disqus_thread"></div>
+        <script>
+
+
+
+            var disqus_config = function () {
+                this.page.url = review.html;  
+                this.page.identifier = review; 
+            };
+
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://behealthy9.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>    -->
+        
+   <div class="pusto"></div>      
+        
+        
+        
+        
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_inner">
+                
+                <div class="footer_block">
+                    <h4 class="footer_title">Location</h4>
+                    <address class="footer_address">
+                        <div>Zaporizhzhia, Ukraine</div>
+                        <div>9999, Mokryanskaya Street</div>
+                    </address>
+                </div>
+                
+                <div class="footer_block">
+                    <h4 class="footer_title">Contact Us</h4>
+                    
+                    
+                    <div class="social">
+                    <a class="social_item" href="#" target="_blank">
+                        <svg class="social_icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                    
+                    <a class="social_item" href="#" target="_blank">
+                        <svg class="social_icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    
+                    <a class="social_item" href="#" target="_blank">
+                        <svg class="social_icon">
+                            <use xlink:href="#youtube"></use>
+                        </svg>
+                    </a>
+                    
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="footer_block">
+                    <h4 class="footer_title">About</h4>
+                    <div class="footer_text">
+                        <div>An adaptive website to</div> 
+                        <div>help people with disabilities</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright_text">
+                    <div> Graduation work to EPK ZNU </div>
+                    <div> Made <span>by Maksym Basovskiy</span> </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>    
+        
+        
+   
+        
+        
+        
+        
+        
+        
+        
+        
+   <!-- Javascript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="app.js"></script>
+     
+        
+        
+    </body>
+</html>
